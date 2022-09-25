@@ -1,0 +1,117 @@
+.App-header {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  flex-wrap: wrap-reverse;
+  background-color: #3d4962;
+  min-height: 100vh;
+  color: white;
+  padding: 25px;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  text-transform: capitalize;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+p {
+  text-align: justify;
+}
+
+.App-header h1 {
+  font-size: 5em;
+}
+
+.App-header > img:nth-child(3) {
+  transform: scaleX(-1);
+  width: 45%;
+}
+
+.App-header > img:nth-child(1) {
+  transform: rotate(45deg);
+  width: 25%;
+}
+
+main {
+  padding: 20px 20px 5px;
+  box-sizing: border-box;
+}
+
+.rose {
+  width: 30%;
+  height: auto;
+}
+
+.end {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.p1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.p1 img {
+  width: 100%;
+}
+
+.p2 {
+  flex-wrap: wrap-reverse;
+}
+
+@media only screen and (min-width: 426px) {
+  .App-header > img:nth-child(3) {
+    width: 40%;
+  }
+
+  .end {
+    padding: 0 200px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .App-header > img:nth-child(1) {
+    width: 15%;
+  }
+
+  .App-header > img:nth-child(3) {
+    width: 20%;
+  }
+
+  .p1 {
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+  }
+
+  main :last-child {
+    flex-wrap: wrap;
+  }
+
+  .p1 img {
+    width: 60%;
+  }
+
+  .p1 p {
+    box-sizing: border-box;
+    padding-right: 20px;
+  }
+
+  .p2 p {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+}
+
